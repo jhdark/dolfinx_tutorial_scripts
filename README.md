@@ -28,17 +28,19 @@ conda activate dolfinx-tutorial-env
 
 ## How to work through an example
 
-Each `Example_N` folder contains the same three things:
+Each `Example_N` folder has its own `README.md` with the full problem statement, and
+the same three files:
 
-1. **`eg_N.ipynb`**: a notebook that explains the problem step by step. **Read this
-   first.**
-2. **`my_script.py`**: a near-empty scaffold for **you** to fill in. After reading the
-   notebook, try to reproduce the solution here from scratch. This is where the
-   learning happens.
-3. **`eg_N.py`**: the complete reference script. Check your version against it once you
-   have had a go, or use it if you get stuck.
+1. **`my_script.py`**: where **you** write the script from scratch. Start from the
+   problem statement and build it up yourself. This is the main task.
+2. **`eg_N.py`**: a complete worked example showing one way to solve it. Use it to
+   check your approach.
+3. **`eg_N.ipynb`**: a step-by-step walkthrough of the worked example, there to help if
+   you get stuck.
 
-Each folder also has its own `README.md` with the full problem statement.
+Lean on outside resources as you go, especially the official
+[DOLFINx tutorial](https://jsdokken.com/dolfinx-tutorial/), which covers most of what
+you need.
 
 ## Viewing results
 
