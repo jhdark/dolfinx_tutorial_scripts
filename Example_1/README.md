@@ -1,4 +1,4 @@
-# Example 1 — Steady-state heat transfer in 1D
+# Example 1: Steady state heat transfer in 1D
 
 ## Problem statement
 
@@ -49,23 +49,21 @@ This is the simplest possible finite-element problem, so it's a good place to se
 the **anatomy of a DOLFINx script**. Every simulation in this tutorial is built
 from the same building blocks:
 
-1. **Backends** — `MPI` (parallelism) and `PETSc` (linear algebra / solvers).
-2. **Mesh** — the discretised geometry of the domain `Ω`.
-3. **Function space** — the space of allowed solutions (here, piecewise-linear "hat"
+1. **Backends:** `MPI` (parallelism) and `PETSc` (linear algebra, solvers).
+2. **Mesh:** the discretised geometry of the domain `Ω`.
+3. **Function space:** the space of allowed solutions (here, piecewise-linear "hat"
    functions), plus the **unknown** function `u` and a **test** function `v`.
-4. **Boundary conditions** — pinning the solution at the two ends.
-5. **Variational (weak) form** — the PDE rewritten as an integral equation `F = 0`.
-6. **Solver** — the PETSc options and the problem object that drives Newton's method.
-7. **Solve & post-process** — run it, then visualise / extract quantities.
+4. **Boundary conditions:** pinning the solution at the two ends.
+5. **Variational (weak) form:** the PDE rewritten as an integral equation `F = 0`.
+6. **Solver:** the PETSc options and the problem object that drives Newton's method.
+7. **Solve and post-process:** run it, then visualise and extract quantities.
 
 ## Files
 
-- [`ht_problem_example.py`](ht_problem_example.py) — the script as you would actually
-  write/run it.
-- [`ht_problem_example.ipynb`](ht_problem_example.ipynb) — the same problem, broken
-  into steps with explanations. **Start here** if you are new to DOLFINx.
-- [`plotting_functions.py`](plotting_functions.py) — a small PyVista helper used to
-  plot the result.
+- [`eg_1.py`](eg_1.py): the script as you would actually write and run it. The PyVista
+  plotting helper is defined at the top of this file.
+- [`eg_1.ipynb`](eg_1.ipynb): the same problem, broken into steps with explanations.
+  **Start here** if you are new to DOLFINx.
 
 ## Running
 
@@ -74,17 +72,17 @@ root (see the top-level `environment.yml`):
 
 ```bash
 conda env create -f environment.yml
-conda activate dolfinx-tutorial
+conda activate dolfinx-tutorial-env
 ```
 
 Then either run the script:
 
 ```bash
-python ht_problem_example.py
+python eg_1.py
 ```
 
 or open the notebook:
 
 ```bash
-jupyter lab ht_problem_example.ipynb
+jupyter lab eg_1.ipynb
 ```
