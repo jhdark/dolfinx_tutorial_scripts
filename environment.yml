@@ -1,7 +1,9 @@
-name: dolfinx-tutorial
+name: dolfinx-tutorial-env
 channels:
   - conda-forge
 dependencies:
   - python=3.12
   - fenics-dolfinx=0.10
+  - pyvista
   - tqdm
+  - jupyter
