@@ -51,21 +51,13 @@ hydrogen (`+R` in the second), so the coupling conserves material.
 
 ## Files
 
-- [`eg_4.ipynb`](eg_4.ipynb): the example explained step by step. **Start here.**
-- [`my_script.py`](my_script.py): a scaffold (imports only) for **you** to fill in.
-- [`eg_4.py`](eg_4.py): the complete reference script to check yourself against.
+- [`my_script.py`](my_script.py): where **you** write the script from scratch, starting
+  from the problem statement above. This is the main task.
+- [`eg_4.py`](eg_4.py): a complete worked example to check your approach against. It
+  writes `trapping_cm.bp` and `trapping_ct.bp`, which you can open in
+  [ParaView](https://www.paraview.org/).
+- [`eg_4.ipynb`](eg_4.ipynb): a step-by-step walkthrough of the worked example, there
+  to help if you get stuck.
 
-## Running
-
-From the repository root, create and activate the environment (see the top-level
-`environment.yml`), then:
-
-```bash
-conda activate dolfinx-tutorial-env
-jupyter lab eg_4.ipynb   # read through the example
-python my_script.py      # run your own version
-python eg_4.py           # compare against the reference
-```
-
-Running the script writes `trapping_cm.bp` and `trapping_ct.bp`, which you can open in
-[ParaView](https://www.paraview.org/).
+See the [top-level README](../README.md) for how to build the environment and the
+intended workflow.

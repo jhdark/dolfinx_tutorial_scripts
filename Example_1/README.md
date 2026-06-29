@@ -60,39 +60,12 @@ from the same building blocks:
 
 ## Files
 
-- [`eg_1.ipynb`](eg_1.ipynb): the same problem, broken into steps with explanations.
-  **Start here** if you are new to DOLFINx.
-- [`my_script.py`](my_script.py): a near-empty scaffold (just the imports) for **you**
-  to fill in. Work through the notebook, then try to reproduce the solution here from
-  scratch. This is where the learning happens.
-- [`eg_1.py`](eg_1.py): the complete reference script. Check your `my_script.py`
-  against it once you have had a go, or use it if you get stuck. The PyVista plotting
-  helper is defined at the top of this file.
+- [`my_script.py`](my_script.py): where **you** write the script from scratch, starting
+  from the problem statement above. This is the main task.
+- [`eg_1.py`](eg_1.py): a complete worked example to check your approach against. The
+  PyVista plotting helper is defined at the top of this file.
+- [`eg_1.ipynb`](eg_1.ipynb): a step-by-step walkthrough of the worked example, there
+  to help if you get stuck.
 
-## Running
-
-Make sure you have created and activated the conda environment from the repository
-root (see the top-level `environment.yml`):
-
-```bash
-conda env create -f environment.yml
-conda activate dolfinx-tutorial-env
-```
-
-Then open the notebook to read through the example:
-
-```bash
-jupyter lab eg_1.ipynb
-```
-
-write your own version in `my_script.py` and run it:
-
-```bash
-python my_script.py
-```
-
-and compare against the reference solution when you are done:
-
-```bash
-python eg_1.py
-```
+See the [top-level README](../README.md) for how to build the environment and the
+intended workflow.
